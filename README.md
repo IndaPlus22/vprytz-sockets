@@ -1,3 +1,3 @@
 # vprytz-sockets
 
-A chat client and server, written in Rust.
+Online server implementation of [IndaPlus22/vprytz-chess-gui](https://github.com/IndaPlus22/vprytz-chess-gui).
