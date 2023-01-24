@@ -14,10 +14,10 @@ use std::sync::mpsc;
 use std::thread;
 
 /* Address to server. */
-const SERVER_ADDR: &str = "172.20.10.2:6000";
+const SERVER_ADDR: &str = "127.0.0.1:6000";
 
 /* Max message size in characters. */
-const MSG_SIZE: usize = 32;
+const MSG_SIZE: usize = 64;
 
 /**
  * Sleep (current thread) for 100 milliseconds.
