@@ -1,12 +1,11 @@
+use std::collections::HashMap;
 /**
- * Chat Server Example
+ * Server for chess GUI, https://github.com/IndaPlus22/vprytz-chess-gui
  *
- * Simple broadcast single-line text-only chat server.
+ * Based on https://github.com/IndaPlus22/AssignmentInstructions-BlueNote/blob/main/task-14/rust-example/server/src/main.rs
+ * which is written by: Author: Tensor-Programming, Viola Söderlund <violaso@kth.se>
  *
- * Author: Tensor-Programming, Viola Söderlund <violaso@kth.se>
- * Last updated: 2021-01-21
- *
- * See: https://github.com/tensor-programming/Rust_client-server_chat
+ * Author: Vilhelm Prytz <vilhelm@prytznet.se>
  */
 use std::io::{ErrorKind, Read, Write};
 use std::net::TcpListener;
@@ -20,10 +19,10 @@ const SERVER_ADDR: &str = "0.0.0.0:6000";
 const MSG_SIZE: usize = 64;
 
 /**
- * Sleep (current thread) for 100 milliseconds.
+ * Sleep (current thread) for 30 milliseconds.
  */
 fn sleep() {
-    thread::sleep(::std::time::Duration::from_millis(100));
+    thread::sleep(::std::time::Duration::from_millis(30));
 }
 
 fn main() {
