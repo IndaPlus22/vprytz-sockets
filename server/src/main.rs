@@ -1,4 +1,3 @@
-use std::collections::HashMap;
 /**
  * Server for chess GUI, https://github.com/IndaPlus22/vprytz-chess-gui
  *
